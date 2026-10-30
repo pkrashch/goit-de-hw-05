@@ -49,3 +49,21 @@ python alerts_consumer.py        # термінал 4
 {"sensor_id": 4821, "timestamp": "2026-10-30 20:15:02", "temperature": 41.37,
  "message": "Temperature 41.37°C exceeds threshold 40°C"}
 ```
+
+## Скриншоти
+
+### 1. Створення трьох топіків
+![p1](screenshots/p1_topics.png)
+
+### 2. Два датчики працюють одночасно (ID 8074 і 5983)
+![p2](screenshots/p2_two_sensors.png)
+
+### 3. Отримання даних з building_sensors і фільтрація
+![p3](screenshots/p3_processing_filtering.png)
+
+### 4. Відфільтровані дані відправлені у temperature_alerts / humidity_alerts
+Зліва процесор відправляє сповіщення, справа ті самі сповіщення читаються з топіків.
+![p4](screenshots/p4_alerts_sent_to_topics.png)
+
+### 5. Результат: сповіщення з обох топіків
+![p5](screenshots/p5_alerts_output.png)
